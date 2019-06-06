@@ -70,3 +70,9 @@ I have dlib face detector and dlib 68 point shape predictor for Emotion Recognit
 
 ![picture](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/Images/5.jpg)
 
+![picture](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/Images/4.jpg)
+
+## Author
+- Jiten Sinha
+
+## License
