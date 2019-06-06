@@ -16,6 +16,7 @@ I have used two datasets - Extended Cohn-Kanade Dataset(CK+) and fer-2013 datase
 - numpy
 - sklearn
 - imutils
+- scipy
 
 # Steps for using the software
 
