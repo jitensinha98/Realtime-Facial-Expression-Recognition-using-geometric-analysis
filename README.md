@@ -21,6 +21,10 @@ I have used two datasets - Extended Cohn-Kanade Dataset(CK+) and fer-2013 datase
 
 Follow the following steps sequentially :-
 
+- Download ***shape_predictor_68_face_landmarks.dat*** from [here](https://github.com/davisking/dlib-models) and put it in the Repository directory.
+
+- Download the datasets from the above links and put their contents in the  folders - Cohn-Kanade_Dataset and fer2013 respectively.
+
 - Run ***Extract_fer2013_images.py*** 
 ```
 python3 Extract_fer2013_images.py
@@ -50,3 +54,16 @@ An ANN is designed using Keras for predicting the target variables using the fea
 python3 face_detection_and_emotion_recognition.py
 ```
 This will perform realtime prediction from the video feed acquired from the webcam.
+
+## About the Software
+I have dlib face detector and dlib 68 point shape predictor for Emotion Recognition . The predictor provides 68 coordinates in the face to predict its shape . I have used the euclidean distances among these points as features to predict target variable . While computing realtime predictions i have cropped and resize the face portion of every face for accurate predictions over long distances from the video source . I have also designed a progress bar which displays the probability of each of the four emotions - ***Happy,Sad,Angry,Suprise***. Adding any more emotions causes a drop in the accuracy so i have used only these four emotions for training.
+
+## Sample Face Landmark on Dataset Images
+
+![picture](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/Images/1.jpg)
+
+![picture](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/Images/2.jpg)
+
+![picture](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/Images/3.jpg)
+
+
