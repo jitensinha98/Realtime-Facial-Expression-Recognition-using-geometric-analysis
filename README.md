@@ -1,8 +1,21 @@
 # Face-Detection-and-Emotion-Recognition
-This repository conatins the implementation of designed Emotion Recognition model trained using Cohn-Kanade and fer-2013 datasets.The Best Accuracy obtained is ***78.9%***. 
+This repository conatins the implementation of designed Emotion Recognition model trained using ***Cohn-Kanade*** and ***fer-2013*** datasets.The Best Accuracy obtained is ***78.9%***. 
 
-## About the dataset
-I have used two datasets - Extended Cohn-Kanade Dataset(CK+) and fer-2013 dataset
+## About the datasets
+I have used two datasets - Extended Cohn-Kanade Dataset(CK+) and fer-2013 dataset .  The CK+ dataset contains only 123 subjects whereas the fer-2013 dataset contains more than thousand subjects. As a result The test accuracy of CK+ is ***92.3%*** whereas the test result of of fer-2013 is below ***70%*** . So i have performed a combination of both the dataset to get a more balanced dataset . I also had to discard 40% of images from all the subjects in Cohn-Kanade's dataset because they were meaningless and irrelevant. Details of acquiring CK+ dataset is [http://www.pitt.edu/~emotion/ck-spread.htm](here) and fer-2013 is [https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge](here) . 
+
+## Modules Used
+- Keras
+- Tensorflow-gpu == 1.5
+- tqdm
+- dlib
+- opencv
+- os
+- shutil
+- pandas
+- numpy
+- sklearn
+- imutils
 
 # Steps for using the software
 
@@ -33,4 +46,7 @@ python3 Training_Classifier.py
 An ANN is designed using Keras for predicting the target variables using the features.The model will be saved on path ***Saved_Model/Classifier_model.sav***
 
 - Run ***face_detection_and_emotion_recognition.py***
+```
+python3 face_detection_and_emotion_recognition.py
+```
 This will perform realtime prediction from the video feed acquired from the webcam.
