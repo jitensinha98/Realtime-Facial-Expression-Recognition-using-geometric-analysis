@@ -1,5 +1,5 @@
 # Face-Detection-and-Emotion-Recognition
-This repository conatins the implementation of designed Emotion Recognition model trained using ***Cohn-Kanade*** and ***fer-2013*** datasets.The Best Accuracy obtained is ***78.9%***. 
+This repository conatins the implementation of designed Emotion Recognition model trained using ***Cohn-Kanade*** and ***fer-2013*** datasets.The Best Accuracy obtained is ***78.9%***.Emotions used are - ***Happy,Sad,Angry and Suprise***.
 
 ## About the datasets
 I have used two datasets - Extended Cohn-Kanade Dataset(CK+) and fer-2013 dataset .  The CK+ dataset contains only 123 subjects whereas the fer-2013 dataset contains more than thousand subjects. As a result The test accuracy of CK+ is ***92.3%*** whereas the test result of of fer-2013 is below ***70%*** . So i have performed a combination of both the dataset to get a more balanced dataset . I also had to discard 40% of images from all the subjects in Cohn-Kanade's dataset because they were meaningless and irrelevant. Details of acquiring CK+ dataset is [here](http://www.pitt.edu/~emotion/ck-spread.htm) and fer-2013 is [here](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge) . 
@@ -76,3 +76,4 @@ I have dlib face detector and dlib 68 point shape predictor for Emotion Recognit
 - Jiten Sinha
 
 ## License
+This project is based under MIT Licence.To know more click [here](https://github.com/jitensinha98/Face-Detection-and-Emotion-Recognition/blob/master/LICENSE).
