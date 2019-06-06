@@ -57,7 +57,7 @@ python3 face_detection_and_emotion_recognition.py
 This will perform realtime prediction from the video feed acquired from the webcam.
 
 ## About the Software
-I have dlib face detector and dlib 68 point shape predictor for Emotion Recognition . The predictor provides 68 coordinates in the face to predict its shape . I have used the euclidean distances among these points as features to predict target variable . While computing realtime predictions i have cropped and resize the face portion of every face for accurate predictions over long distances from the video source . I have also designed a progress bar which displays the probability of each of the four emotions - ***Happy,Sad,Angry,Suprise***. Adding any more emotions causes a drop in the accuracy so i have used only these four emotions for training.
+I have dlib face detector and dlib 68 point shape predictor for Emotion Recognition . The predictor provides 68 coordinates in the face to predict its shape . I have used the euclidean distances among these points as features to predict target variable . While computing realtime predictions i have cropped and resize the face portion of every face for accurate predictions over long distances from the video source . I have also designed a progress bar which displays the probability of each of the four emotions - ***Happy,Sad,Angry,Suprise***. Adding any more emotions causes a drop in the accuracy so i have used only these four emotions for training.Using progress bar will significantly slow down the process of prediction and ***using progress bar is only relevant when trying to predict the emotion of a single face per frame.***
 
 ## Sample Face Landmark on Dataset Images
 
